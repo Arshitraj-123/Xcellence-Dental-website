@@ -1,0 +1,201 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-enamel: #FBF8F2;
+  --color-pearl: #FFFFFF;
+  --color-linen: #F1EBE1;
+  --color-ink: #1E1A1D;
+  --color-muted: #6B6168;
+  --color-pomegranate: #8C2F4B;
+  --color-pomegranate-dark: #6F2339;
+  --color-rosewater: #F3DFDA;
+  --color-clove: #2A1620;
+  --color-brass: #C19A5B;
+  --color-brass-deep: #A67C3A;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+    background-color: var(--color-enamel);
+    color: var(--color-ink);
+  }
+
+  body {
+    font-family: 'Hanken Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--color-enamel);
+    color: var(--color-ink);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Instrument Serif', Georgia, serif;
+    letter-spacing: -0.01em;
+    line-height: 1.15;
+  }
+
+  :focus-visible {
+    outline: 3px solid var(--color-pomegranate);
+    outline-offset: 3px;
+  }
+}
+
+/* Custom architectural frames and dental tooth arch shapes */
+.arch-frame {
+  border-radius: 200px 200px 28px 28px;
+}
+
+.arch-frame-reverse {
+  border-radius: 28px 200px 28px 28px;
+}
+
+/* Brass divider rules */
+.brass-rule-light {
+  height: 1px;
+  background-color: var(--color-brass-deep);
+  opacity: 0.25;
+}
+
+.brass-rule-dark {
+  height: 1px;
+  background-color: var(--color-brass);
+  opacity: 0.35;
+}
+
+/* Enamel shine diagonal gloss sweep for buttons on hover */
+.enamel-btn-shine {
+  position: relative;
+  overflow: hidden;
+}
+
+.enamel-btn-shine::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  transform: skewX(-25deg);
+  pointer-events: none;
+  transition: transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.enamel-btn-shine:hover::after,
+.enamel-btn-shine:focus-visible::after {
+  transform: translateX(400%) skewX(-25deg);
+}
+
+/* Responsive card shadows that blend softly with enamel */
+.shadow-soft {
+  box-shadow: 0 20px 48px -24px rgba(42, 22, 32, 0.12);
+}
+
+
+.shadow-card-elevated {
+  box-shadow: 0 24px 60px -20px rgba(42, 22, 32, 0.18);
+}
+
+/* Form printable styles */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #printable-patient-sheet,
+  #printable-patient-sheet * {
+    visibility: visible;
+  }
+  #printable-patient-sheet {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: none;
+    border: none;
+  }
+}
+
+/* Flagship Service Hero Accents */
+@keyframes laser-sweep {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0.1;
+  }
+  35% {
+    opacity: 1;
+  }
+  65% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(250%);
+    opacity: 0.1;
+  }
+}
+
+.animate-laser-sweep {
+  animation: laser-sweep 2.8s ease-in-out infinite;
+}
+
+@keyframes implant-screw {
+  0% {
+    transform: translateY(-4px) rotate(0deg);
+  }
+  45% {
+    transform: translateY(3px) rotate(240deg);
+  }
+  70% {
+    transform: translateY(3px) rotate(360deg);
+  }
+  100% {
+    transform: translateY(-4px) rotate(360deg);
+  }
+}
+
+.animate-implant-screw {
+  animation: implant-screw 3.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+@keyframes gum-wave {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px) scaleY(1.1);
+  }
+}
+
+.animate-gum-wave {
+  animation: gum-wave 3s ease-in-out infinite;
+}
+
+/* Accessibility: respects reduced motion (system or manual toggle) */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html.reduce-motion *,
+html.reduce-motion *::before,
+html.reduce-motion *::after {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+  scroll-behavior: auto !important;
+}
+
+

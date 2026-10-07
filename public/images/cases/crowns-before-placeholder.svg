@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2A1620"/>
+      <stop offset="100%" stop-color="#1A0D14"/>
+    </linearGradient>
+    <filter id="drop" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <rect width="600" height="450" fill="url(#bg)"/>
+
+  <!-- Decorative arch frame -->
+  <path d="M 50 400 L 50 160 A 250 250 0 0 1 550 160 L 550 400 Z" fill="#FBF8F2" fill-opacity="0.04" stroke="#C19A5B" stroke-width="1.5" stroke-opacity="0.3"/>
+
+  <!-- Badge -->
+  <rect x="230" y="45" width="140" height="30" rx="15" fill="#8C2F4B" filter="url(#drop)"/>
+  <text x="300" y="65" text-anchor="middle" fill="#FFFFFF" font-family="'Hanken Grotesk', sans-serif" font-size="12" font-weight="700" letter-spacing="1.5">BEFORE TREATMENT</text>
+
+  <!-- Illustrated teeth row -->
+  <g transform="translate(180, 130)" filter="url(#drop)">
+    <rect x="0" y="40" width="240" height="40" rx="10" fill="#F3DFDA" opacity="0.6"/>
+    <!-- Tooth 1 -->
+    <path d="M 20 20 C 20 60 25 80 40 85 C 55 80 60 60 60 20 Z" fill="#E2D3B8" stroke="#6B6168" stroke-width="2"/>
+    <!-- Tooth 2 -->
+    <path d="M 70 15 C 70 65 78 90 95 95 C 112 90 120 65 120 15 Z" fill="#E2D3B8" stroke="#6B6168" stroke-width="2"/>
+    <!-- Tooth 3 -->
+    <path d="M 125 15 C 125 65 133 90 150 95 C 167 90 175 65 175 15 Z" fill="#E2D3B8" stroke="#6B6168" stroke-width="2"/>
+    <!-- Tooth 4 -->
+    <path d="M 185 20 C 185 60 190 80 205 85 C 220 80 225 60 225 20 Z" fill="#E2D3B8" stroke="#6B6168" stroke-width="2"/>
+    <!-- Smile arc line -->
+    <path d="M 15 55 Q 120 110 230 55" fill="none" stroke="#A67C3A" stroke-width="3.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Labels -->
+  <text x="300" y="320" text-anchor="middle" fill="#FBF8F2" font-family="'Instrument Serif', serif" font-size="28" font-weight="700">Ceramic Crowns Case</text>
+  <text x="300" y="355" text-anchor="middle" fill="#C19A5B" font-family="'Hanken Grotesk', sans-serif" font-size="13" font-weight="500">Pre-Procedure Clinical Evaluation</text>
+  <text x="300" y="385" text-anchor="middle" fill="#6B6168" font-family="'Hanken Grotesk', sans-serif" font-size="11">Clinical Photo Placeholder · Xcellence Dental Clinic Haridwar</text>
+</svg>
