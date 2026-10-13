@@ -56,7 +56,7 @@ function generateSvgPlaceholder(title, subtitle, toothFill, isBefore) {
   </g>
 
   <!-- Labels -->
-  <text x="300" y="320" text-anchor="middle" fill="#FBF8F2" font-family="'Instrument Serif', serif" font-size="28" font-weight="700">${title}</text>
+  <text x="300" y="320" text-anchor="middle" fill="#FBF8F2" font-family="'Plus Jakarta Sans', sans-serif" font-size="28" font-weight="700">${title}</text>
   <text x="300" y="355" text-anchor="middle" fill="#C19A5B" font-family="'Hanken Grotesk', sans-serif" font-size="13" font-weight="500">${subtitle}</text>
   <text x="300" y="385" text-anchor="middle" fill="#6B6168" font-family="'Hanken Grotesk', sans-serif" font-size="11">Clinical Photo Placeholder · Xcellence Dental Clinic Haridwar</text>
 </svg>`;
@@ -90,7 +90,7 @@ function generateDoctorPlaceholder(name, credentials) {
   <rect width="500" height="600" fill="url(#docBg)"/>
   <circle cx="250" cy="220" r="100" fill="#FBF8F2" fill-opacity="0.1" stroke="#C19A5B" stroke-width="2"/>
   <path d="M 170 460 C 170 340 330 340 330 460 Z" fill="#FBF8F2" fill-opacity="0.15" stroke="#C19A5B" stroke-width="2"/>
-  <text x="250" y="510" text-anchor="middle" fill="#FBF8F2" font-family="'Instrument Serif', serif" font-size="28" font-weight="700">${name}</text>
+  <text x="250" y="510" text-anchor="middle" fill="#FBF8F2" font-family="'Plus Jakarta Sans', sans-serif" font-size="28" font-weight="700">${name}</text>
   <text x="250" y="540" text-anchor="middle" fill="#C19A5B" font-family="'Hanken Grotesk', sans-serif" font-size="13">${credentials}</text>
   <text x="250" y="570" text-anchor="middle" fill="#6B6168" font-family="'Hanken Grotesk', sans-serif" font-size="11">Official Portrait Placeholder · Xcellence Dental Clinic</text>
 </svg>`;
@@ -104,7 +104,7 @@ function generateClinicPlaceholder(title, subtitle) {
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
   <rect width="800" height="500" fill="#2A1620"/>
   <rect x="20" y="20" width="760" height="460" rx="16" fill="#FBF8F2" fill-opacity="0.05" stroke="#C19A5B" stroke-width="1.5"/>
-  <text x="400" y="240" text-anchor="middle" fill="#FBF8F2" font-family="'Instrument Serif', serif" font-size="34" font-weight="700">${title}</text>
+  <text x="400" y="240" text-anchor="middle" fill="#FBF8F2" font-family="'Plus Jakarta Sans', sans-serif" font-size="34" font-weight="700">${title}</text>
   <text x="400" y="280" text-anchor="middle" fill="#C19A5B" font-family="'Hanken Grotesk', sans-serif" font-size="16">${subtitle}</text>
   <text x="400" y="320" text-anchor="middle" fill="#6B6168" font-family="'Hanken Grotesk', sans-serif" font-size="12">Clinic Interior & Facility Placeholder</text>
 </svg>`;

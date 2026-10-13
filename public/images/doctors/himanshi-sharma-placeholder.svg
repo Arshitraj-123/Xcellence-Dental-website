@@ -8,7 +8,7 @@
   <rect width="500" height="600" fill="url(#docBg)"/>
   <circle cx="250" cy="220" r="100" fill="#FBF8F2" fill-opacity="0.1" stroke="#C19A5B" stroke-width="2"/>
   <path d="M 170 460 C 170 340 330 340 330 460 Z" fill="#FBF8F2" fill-opacity="0.15" stroke="#C19A5B" stroke-width="2"/>
-  <text x="250" y="510" text-anchor="middle" fill="#FBF8F2" font-family="'Instrument Serif', serif" font-size="28" font-weight="700">Dr. Himanshi Sharma</text>
+  <text x="250" y="510" text-anchor="middle" fill="#FBF8F2" font-family="'Plus Jakarta Sans', sans-serif" font-size="28" font-weight="700">Dr. Himanshi Sharma</text>
   <text x="250" y="540" text-anchor="middle" fill="#C19A5B" font-family="'Hanken Grotesk', sans-serif" font-size="13">BDS, MDS (Periodontics & Implantology)</text>
   <text x="250" y="570" text-anchor="middle" fill="#6B6168" font-family="'Hanken Grotesk', sans-serif" font-size="11">Official Portrait Placeholder · Xcellence Dental Clinic</text>
 </svg>
